@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringcloudHystrixApplicationTests {
+public class SpringcloudConsumerHystrixApplicationTests {
 
     @Test
     public void contextLoads() {
