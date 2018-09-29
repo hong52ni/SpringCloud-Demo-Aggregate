@@ -2,7 +2,7 @@ spring:
   application:
     name: eureka-consumer-hystrix
 server:
-  port: 8763
+  port: 8764
 eureka:
   client:
     service-url:
@@ -10,8 +10,8 @@ eureka:
 feign:
   hystrix:
     enabled: true
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        exclude: hystrix.stream
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: hystrix.stream

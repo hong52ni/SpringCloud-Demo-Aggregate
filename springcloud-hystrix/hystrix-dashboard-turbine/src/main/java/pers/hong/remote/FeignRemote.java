@@ -1,0 +1,12 @@
+package pers.hong.remote;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@FeignClient(name = "eureka-client", fallback = HystrixRemote.class)
+public interface FeignRemote {
+
+    @RequestMapping(value = "/message")
+    public String clientMessage(@RequestParam("name") String name);
+}
