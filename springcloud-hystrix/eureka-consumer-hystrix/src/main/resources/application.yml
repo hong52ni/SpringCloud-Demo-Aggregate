@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-consumer-hystrix
+server:
+  port: 8763
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+feign:
+  hystrix:
+    enabled: trues
